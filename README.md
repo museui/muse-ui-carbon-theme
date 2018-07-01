@@ -13,7 +13,6 @@ yarn add muse-ui-carbon-theme
 ## CDN
 
 ```html
-<link rel="stylesheet" href="https://unpkg.com/muse-ui-carbon-theme/dist/muse-ui-carbon-theme.all.css"/>
 <script src="https://unpkg.com/muse-ui-carbon-theme/dist/muse-ui-carbon-theme.js"></script>
 ```
 
@@ -21,32 +20,13 @@ yarn add muse-ui-carbon-theme
 ## Usage
 
 ```javascript
+import { theme } from 'muse-ui'
+import { carbon, createTheme } from '../src';
 
-// TODO use code
-
+theme.add('carbon', carbon)
+  .addCreateTheme(createTheme)
+  .use('carbon');
 ```
-
-## API
-
-### config
-
-```javascript
-export default {
-  // TODO config
-};
-```
-
-### config (config<Object>)
-
-Change default config, Will return new config.
-
-### Methods
-
-// TODO Methods
-
-## Dependencies Muse-UI
-
-// TODO components
 
 ## Licence
 
